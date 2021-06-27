@@ -1,0 +1,603 @@
+* , *:after , *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-animation: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.clearFix {
+    clear: both;
+}
+
+/* Start Cover */
+
+/* Start NavBar */
+.cover {
+    width: 100%;
+}
+
+.cover .coverBg {
+    height: 675px;
+    background-image: url("../images/22.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.cover .coverBg .navBar {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cover .coverBg .navBar .logo {
+    float: left;
+    padding: 15px 0;
+}
+
+.cover .coverBg .navBar .logo img{
+    width: 50px;
+    height: 100px;
+}
+
+.cover .coverBg .navBar .logo h1 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.cover .coverBg .navBar .logo h1 span {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.cover .coverBg .navBar .nav {
+    float: right;
+}
+
+.cover .coverBg .navBar .nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.cover .coverBg .navBar .nav ul li {
+    display: inline-block;
+    padding: 30px  15px;
+}
+
+.cover .coverBg .navBar .nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.cover .coverBg .navBar .nav ul li a:hover {
+    color: #d60404;
+}
+
+/* End NavBar */
+
+/* Start Intro */
+.cover .intro {
+    width: 60%; 
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.cover .intro h1 {
+    font-size: 60px;
+    color: #FFF;
+    padding: 10px 0;
+}
+
+.cover .intro p {
+    color: #FFF;
+    padding: 1% 0 1%;
+    font-size: 17px;
+}
+
+.cover .intro p:nth-child(3) {
+    padding: 0 0 5%;
+}
+
+.cover .intro button {
+    background: none;
+    padding: 20px 35px;
+    color: #000;
+    background-color: #FFF;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.cover .intro button:nth-of-type(1) {
+    color: #000;
+    background-color: #FFF;
+}
+
+.cover .intro button:nth-of-type(1):hover {
+    background-color: rgb(219, 214, 214);
+}
+
+.cover .intro button:nth-of-type(2) {
+    color: #FFF;
+    background-color: rgb(54, 0, 0);
+    margin-left: 20px;
+}
+
+.cover .intro button:nth-of-type(2):hover {
+    background-color: rgb(151, 1, 1);
+}
+
+.cover .coverBg .animate {
+    width: 2.5%;
+    height: 10%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-75% , 0);
+    border: 2px solid #FFF;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cover .coverBg .animate .scroll {
+    width: 5px;
+    height: 10px;
+    background-color: #FFF;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    animation: Scrolling 2s ease-in-out infinite ;
+}
+
+@keyframes Scrolling {
+    0% {
+        opacity: 1;
+        top: 5px;
+    }
+
+    50% {
+        opacity: 0.5;
+        top: 30px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+
+/* End Intro */
+
+/* Start Cover */
+
+/* Start Content */
+.content {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/57.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    border-top: 1px solid #FFF;
+    margin-bottom: 15%;
+}
+
+.content .head {
+    width: 100%;
+    text-align: center;
+    padding: 8% 0 4%;
+}
+
+.content .head h1 {
+    color: #FFF;
+    padding-bottom: 2%;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgb(31, 1, 1);
+}
+
+.content .head p {
+    color: #FFF;
+    font-size: 20px;
+    text-shadow: 2px 2px 10px rgb(31, 1, 1);
+}
+
+.content .fire {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.content .fire h1 {
+    color: #FFF;
+    font-size: 250px;
+    text-align: center;
+    opacity: 0.7;
+    text-shadow: 2px 2px 10px rgb(107, 107, 107);
+}
+
+.content .mimg {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -15%);
+}
+
+.content .mimg img {
+   padding-bottom: 10%;
+   opacity: 0.5;
+}
+
+/* End Content */
+
+/* Start Features */
+.feature {
+    width: 100%;
+    background-color: #FFF;
+    padding-bottom: 25%;
+}
+
+.feature .details {
+    width: 31%;
+    float: left;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.feature .details div {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.feature .details:first-child div {
+    background-color: rgb(182, 3, 3);
+}
+
+.feature .details:nth-child(2) div {
+    background-color: rgb(0, 168, 173)
+}
+
+.feature .details:last-child div {
+    background-color: rgb(230, 226, 0)
+}
+
+.feature .details h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.feature .details p {
+    line-height: 1.5;
+}
+
+
+/* End Features */
+
+/* Start Pricing */
+.pricing {
+    width: 100%;
+    height: auto;
+    background-color: #A40000;
+    text-align: center;
+    padding: 5% 0 10%;
+}
+
+.pricing .heading h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+    padding: 2%;
+    color: #FFF;
+}
+
+.pricing .heading p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.pricing .priceList {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pricing .priceList .price-item {
+    width: 32%;
+    padding-top: 5%;
+    margin: 0 1.5%;
+}
+
+.pricing .priceList .price-item:nth-of-type(1) , 
+.pricing .priceList .price-item:nth-of-type(3) {
+    margin-top: 2%;
+}
+
+.pricing .priceList .price-item:nth-of-type(2) {
+    transform: scale(1.2);
+    margin-top: 20px;
+}
+
+.pricing .priceList .price-item ul {
+    list-style: none;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing .priceList .price-item ul:hover {
+    margin-top: -15px;
+}
+
+.pricing .priceList .price-item ul .person {
+    background-color: #231f20;
+    color: #FFF;
+    font-size: 13px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.pricing .priceList .price-item ul .dollar {
+    background-color: #231f20;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.pricing .priceList .price-item ul:hover .dollar {
+    background-color: rgb(43, 42, 42);
+}
+
+.pricing .priceList .price-item ul .dollar small {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #999
+}
+
+.pricing .priceList .price-item ul .underLine {
+    padding: 20px;
+    border-bottom: 1px solid #EEE;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pricing .priceList .price-item ul .parag {
+    color: #929496;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.pricing .priceList .price-item ul .btn {
+    padding: 20px;
+    color: #A40000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.pricing .priceList .price-item ul .btn:hover {
+    background-color: rgb(240, 237, 237);
+}
+
+
+/* End Pricing */
+
+/* Start Invite */
+.invite {
+    width: 100%;
+    height: auto;
+    background-color: #EEE;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.invite .invite-logo {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    line-height: 70px;
+    border: 2px solid#A40000;
+    border-radius: 50%;
+}
+
+.invite .invite-logo i {
+    font-size: 25px;
+    color: #A40000;
+}
+
+.invite .invite-head {
+    width: 100%;
+    padding: 3% ;
+}
+
+.invite .invite-head h1 {
+    font-size: 40px;
+    padding-bottom: 2%;
+    color: #333;
+}
+
+.invite .invite-head p {
+    font-size: 18px;
+    color: #333;
+}
+
+.invite .invite-form .form-form input {
+    display: block;
+    margin: auto;
+}
+
+.invite .invite-form .form-form input[type="email"] {
+    width: 35%;
+    padding: 20px;
+    margin-bottom: 2%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.invite .invite-form .form-form input[type="email"]::placeholder {
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+}
+
+.invite .invite-form .form-form input[type="submit"] {
+    width: 18%;
+    padding: 25px;
+    margin-bottom: 2%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #A40000;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* End Invite */
+
+/* Start Info */
+.info {
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    padding: 10% 0 7%;
+}
+
+.info .information {
+    width: 70%;
+    margin: 0 auto 5%;
+}
+
+.info .information .info-logo {
+    width: 20%;
+    float: left;
+}
+
+.info .information .info-logo i {
+    font-size: 65px;
+    color: #A40000;
+    padding-top: 10px;
+}
+
+.info .information .info-information p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+    color: #929496
+}
+
+.info .information .info-information span {
+    font-size: 15px;
+    color: #444;
+    font-style: italic;
+}
+
+.info .information .info-information {
+    width: 80%;
+    float: right;
+}
+
+.info .hrline {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto 3%;
+    background-color: #EEE;
+}
+
+
+/* End Info */
+
+/* Start Footer */
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer .social {
+    width: 45%;
+    float:left;
+    padding: 20px;
+}
+
+.footer .social .connect {
+    width: 35%;
+    float: left;
+}
+
+.footer .social .connect span {
+    font-size: 18px;
+    color: #929496;
+}
+
+.footer .social .social-icons {
+    width: 60%;
+    float: right;
+    margin-left: 10px;
+}
+
+.footer .social .social-icons i {
+    font-size: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer .social .social-icons i:hover {
+    color: #A40000;
+    transform: scale(1.5) rotate(20deg);
+}
+
+.footer .copy {
+    width: 30%;
+    float: right;
+    padding: 20px;
+}
+
+.footer .copy span {
+    font-size: 15px;
+    color: #929496;
+    padding: 5px;
+}
+
+.footer .copy span:nth-of-type(2) {
+    margin-left: 110px;
+}
+
+.footer .copy span:nth-of-type(2) span {
+    display: inline-block;
+    color: #A40000;
+    font-weight: bold;
+}
+
+/* End Footer */
